@@ -1,9 +1,9 @@
-# big5
+# big5-dart
 
-A new flutter package project.
+This package provides encode, decode method for big5.
 
-## Getting Started
+## Usage
 
-For help getting started with Flutter, view our online [documentation](https://flutter.io/).
+    big5.decode('word')
 
-For help on editing package code, view the [documentation](https://flutter.io/developing-packages/).
+stream version and encode method is ongoing.

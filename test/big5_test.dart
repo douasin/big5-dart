@@ -3,11 +3,7 @@ import 'package:test/test.dart';
 import 'package:big5/big5.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = new Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
-    expect(() => calculator.addOne(null), throwsNoSuchMethodError);
+  test('decode some bytes of with big5 encoded', () {
+    expect(big5.decode([173, 68, 166, 184]), "胖次");
   });
 }
