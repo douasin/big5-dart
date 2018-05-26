@@ -25,7 +25,6 @@ const int RUNE_SELF = 0x80;
 String Big5TransformDecode(List<int> src) {
   var r = 0;
   var size = 0;
-  var s = '';
   var nDst = '';
 
   var nSrc = 0;
