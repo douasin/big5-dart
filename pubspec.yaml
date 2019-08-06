@@ -3,7 +3,7 @@ description: >-
     This package provides encode, decode method for big5.
     If you need a solution to encode, decode some old system
     like kk.muds, this package will help you!
-version: 0.0.3
+version: 0.0.4
 author: Douasin <ray92105@gmail.com>
 homepage: https://github.com/douasin/big5-dart
 

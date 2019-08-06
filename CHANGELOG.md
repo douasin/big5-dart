@@ -9,3 +9,8 @@
 ## [0.0.3] - 2018/05/26
 
 * add encode method
+
+## [0.0.4] - 2019/08/06
+
+* upgrade minimum dart sdk to 2.1.0
+* improve decode performance in long word

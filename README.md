@@ -10,3 +10,5 @@ To use this plugin, add `big5` to your package's pubspec.yaml file
     big5.decode([119, 111, 114, 100]);
 
 stream version and encode method is ongoing.
+
+## This packages is fork from [douasin/big5-dart](https://github.com/douasin/big5-dart) re-upload version.
