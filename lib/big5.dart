@@ -1,7 +1,5 @@
 library big5;
 
-import 'package:flutter/foundation.dart';
-
 part 'table.dart';
 
 // only non-stream version
@@ -9,7 +7,7 @@ class Big5 {
   static int compare(String a, String b) {
     final _a = encode(a);
     final _b = encode(b);
-    if (listEquals(_a, _b)) {
+    if (_listEquals(_a, _b)) {
       return 0;
     }
     final _aLen = _a.length;
@@ -31,6 +29,16 @@ class Big5 {
 
   static List<int> encode(String src) {
     return _big5TransformEncode(src);
+  }
+
+  static bool _listEquals<T>(List<T> a, List<T> b) {
+    if (a == null) return b == null;
+    if (b == null || a.length != b.length) return false;
+    if (identical(a, b)) return true;
+    for (int index = 0; index < a.length; index += 1) {
+      if (a[index] != b[index]) return false;
+    }
+    return true;
   }
 
   static String _big5TransformDecode(List<int> src) {
